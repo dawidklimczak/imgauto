@@ -64,7 +64,6 @@ def display_banner(response_data):
         st.error("Brak danych grafiki w odpowiedzi.")
 
 # Interfejs użytkownika
-st.title("Generator Grafik Webinarowych dla Weterynarzy")
 st.markdown("Uzupełnij formularz, aby wygenerować grafikę webinarową.")
 
 # Bardziej kompaktowy formularz
@@ -87,8 +86,8 @@ col1, col2 = st.columns(2)
 # Prelegent 1
 with col1:
     st.markdown("**Prelegent 1**")
-    company1 = st.text_input("Klinika/instytucja 1", "Klinika Weterynaryjna PetCare")
-    role1 = st.text_input("Stanowisko 1", "Specjalista chirurgii weterynaryjnej")
+    company1 = st.text_input("Klinika/instytucja 1", "PetCare")
+    role1 = st.text_input("Stanowisko 1", "Spec. chirurgii")
     avatar1_url = st.text_input(
         "URL zdjęcia 1", 
         "https://production-banners.s3-eu-west-1.amazonaws.com/templates/v2/3e56f04a-394c-4460-ae5d-5b6886e4591b/c4381011-8d4a-42e9-be03-565ff7793ed9/v2_6f85af7f-1787-4746-bbe4-2720849f9453.jpeg"
@@ -99,7 +98,7 @@ with col1:
 with col2:
     st.markdown("**Prelegent 2**")
     company2 = st.text_input("Klinika/instytucja 2", "Uniwersytet Przyrodniczy")
-    role2 = st.text_input("Stanowisko 2", "Profesor nauk weterynaryjnych")
+    role2 = st.text_input("Stanowisko 2", "Profesor nauk wet.")
     avatar2_url = st.text_input(
         "URL zdjęcia 2", 
         "https://production-banners.s3-eu-west-1.amazonaws.com/templates/v2/3e56f04a-394c-4460-ae5d-5b6886e4591b/c4381011-8d4a-42e9-be03-565ff7793ed9/v2_8bc2ee86-0068-462a-82d1-9ff57c7d4081.jpeg"
